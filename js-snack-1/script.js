@@ -70,9 +70,20 @@ function autoaBenzina(){
 console.log(benzinaArray) */
 
 const benzinaArray = auto.filter(autoBenzina=>{
-    if (auto.alimentazione==="benzina"){
+    if (autoBenzina.alimentazione==="benzina"){
         return autoBenzina.marca
         }
 })
 
 console.log(benzinaArray)
+
+const dieselArray = auto.filter(autoDiesel=>{
+    if (autoDiesel.alimentazione==="diesel"){
+        return autoDiesel.marca
+    }
+})
+console.log(dieselArray)
+
+/* const otheraAutoArray = auto.filter(otherAuto=>{
+    if (auto)
+}) */
